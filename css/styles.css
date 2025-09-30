@@ -38,16 +38,21 @@ input[type=range]:focus{outline:none;}
 input[type=range]::-webkit-slider-runnable-track{ height:8px; background:#ece7e0; border-radius:999px; border:1px solid rgba(20,20,20,0.08);}
 input[type=range]::-moz-range-track{ height:8px; background:#ece7e0; border:1px solid rgba(20,20,20,0.08); border-radius:999px;}
 /* Unicorn thumb */
+/* WebKit (Chrome, Edge, Safari) */
 input[type=range]::-webkit-slider-thumb{
-  -webkit-appearance:none; width:36px; height:36px; border-radius:50%;
-  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjQ0IiB2aWV3Qm94PSIwIDAgNjQgNjQiPjxnPjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjIwIiBmaWxsPSIjZmZmZmZmIi8+PHBhdGggZD0iTTIwIDM4YzAtOCA4LTE0IDE2LTE0IDYgMCAxMCA0IDEwIDYgMCAxMC04IDE2LTE4IDE2LTQgMC04LTItOC04eiIgZmlsbD0iI2Y0YTZmZiIvPjxjaXJjbGUgY3g9IjQwIiBjeT0iMzIiIHI9IjMiIGZpbGw9IiMxNDE0MTQiLz48cGF0aCBkPSJNNDYgMjBsOC0xMC0zIDExeiIgZmlsbD0iI2ZmYmMwMCIvPjxwYXRoIGQ9Ik0yOCAyNmMtMyAyLTQgNi00IDEwIiBzdHJva2U9IiMxNDE0MTQiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==') center/contain no-repeat;
+  -webkit-appearance:none;
+  width:36px; height:36px;
+  background: url('./unicorn_head_traced.svg') center/contain no-repeat;
+  border:none; border-radius:0;
   margin-top:-14px; cursor:grab;
 }
-input[type=range]::-webkit-slider-thumb:active{cursor:grabbing;}
+input[type=range]::-webkit-slider-thumb:active{ cursor:grabbing; }
+
+/* Firefox */
 input[type=range]::-moz-range-thumb{
-  width:36px; height:36px; border-radius:50%;
-  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjQ0IiB2aWV3Qm94PSIwIDAgNjQgNjQiPjxnPjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjIwIiBmaWxsPSIjZmZmZmZmIi8+PHBhdGggZD0iTTIwIDM4YzAtOCA4LTE0IDE2LTE0IDYgMCAxMCA0IDEwIDYgMCAxMC04IDE2LTE4IDE2LTQgMC04LTItOC04eiIgZmlsbD0iI2Y0YTZmZiIvPjxjaXJjbGUgY3g9IjQwIiBjeT0iMzIiIHI9IjMiIGZpbGw9IiMxNDE0MTQiLz48cGF0aCBkPSJNNDYgMjBsOC0xMC0zIDExeiIgZmlsbD0iI2ZmYmMwMCIvPjxwYXRoIGQ9Ik0yOCAyNmMtMyAyLTQgNi00IDEwIiBzdHJva2U9IiMxNDE0MTQiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==') center/contain no-repeat;
-  border:none; cursor:grab;
+  width:36px; height:36px;
+  background: url('./unicorn_head_traced.svg') center/contain no-repeat;
+  border:none; border-radius:0; cursor:grab;
 }
 
 .badges{display:flex; gap:6px; font-size:12px; color:var(--muted);}

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>scarlettabbott — Values & Behaviours Self-Assessment</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand-pill">OUR VALUES</div>
+      <div class="badges"><span>Prototype</span><span>Static · GitHub Pages</span></div>
+    </div>
+
+    <div class="title-wrap">
+      <div class="pill">Values & Behaviours self-assessment</div>
+      <h1>Reflect on how you work — then share it</h1>
+      <p class="subtle">Rate each behaviour from 0 (not yet) to 5 (consistently) and add evidence. Your scores roll up into each value.</p>
+    </div>
+
+    <form id="assessmentForm" class="stack">
+      <!-- United -->
+      <section class="card" data-value="United">
+        <div class="value-header">
+          <div class="value-chip united">united.</div>
+          <div class="subtle">Lead with heart · Lift the team · Build trust</div>
+        </div>
+        <div class="behaviour">
+          <div>
+            <h4>Lead with heart</h4>
+            <p>Having each other’s back. Showing genuine care for people – listening, empathising and being thoughtful of everyone’s time and energy.</p>
+            <textarea class="evidence" placeholder="Evidence or examples..."></textarea>
+          </div>
+          <div class="slider-wrap">
+            <input type="range" min="0" max="5" value="0" step="1"/>
+            <strong><span class="score">0</span>/5</strong>
+          </div>
+        </div>
+        <div class="behaviour">
+          <div>
+            <h4>Lift the team</h4>
+            <p>Creating a space where everyone feels supported and valued. Considering alternative views to our own. Celebrating wins – big and small – and sharing the load.</p>
+            <textarea class="evidence" placeholder="Evidence or examples..."></textarea>
+          </div>
+          <div class="slider-wrap">
+            <input type="range" min="0" max="5" value="0" step="1"/>
+            <strong><span class="score">0</span>/5</strong>
+          </div>
+        </div>
+        <div class="behaviour">
+          <div>
+            <h4>Build trust</h4>
+            <p>Being authentic – having open, honest conversations that build trust. Playing fair – building mutual respect with each other as trusted advisors.</p>
+            <textarea class="evidence" placeholder="Evidence or examples..."></textarea>
+          </div>
+          <div class="slider-wrap">
+            <input type="range" min="0" max="5" value="0" step="1"/>
+            <strong><span class="score">0</span>/5</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brilliant -->
+      <section class="card" data-value="Brilliant">
+        <div class="value-header">
+          <div class="value-chip brilliant">brilliant.</div>
+          <div class="subtle">Deliver on our promises · Care about outcomes · Set up for success</div>
+        </div>
+        <div class="behaviour">
+          <div>
+            <h4>Deliver on our promises</h4>
+            <p>Being flexible with our solutions to deliver world-class work, in line with our expectations. Establishing responsibilities and following through on our promises.</p>
+            <textarea class="evidence" placeholder="Evidence or examples..."></textarea>
+          </div>
+          <div class="slider-wrap">
+            <input type="range" min="0" max="5" value="0" step="1"/>
+            <strong><span class="score">0</span>/5</strong>
+          </div>
+        </div>
+        <div class="behaviour">
+          <div>
+            <h4>Care about outcomes</h4>
+            <p>Taking pride and ownership in what I do, checking work before we send it and thinking about our audiences.</p>
+            <textarea class="evidence" placeholder="Evidence or examples..."></textarea>
+          </div>
+          <div class="slider-wrap">
+            <input type="range" min="0" max="5" value="0" step="1"/>
+            <strong><span class="score">0</span>/5</strong>
+          </div>
+        </div>
+        <div class="behaviour">
+          <div>
+            <h4>Set up for success</h4>
+            <p>Following our ways of working so we’re all set up for success from the minute we get a call to the thank you at the end.</p>
+            <textarea class="evidence" placeholder="Evidence or examples..."></textarea>
+          </div>
+          <div class="slider-wrap">
+            <input type="range" min="0" max="5" value="0" step="1"/>
+            <strong><span class="score">0</span>/5</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- Unstoppable -->
+      <section class="card" data-value="Unstoppable">
+        <div class="value-header">
+          <div class="value-chip unstoppable">unstoppable.</div>
+          <div class="subtle">Change worlds · Always growing · Be curious</div>
+        </div>
+        <div class="behaviour">
+          <div>
+            <h4>Change worlds</h4>
+            <p>Looking to find the most progressive ideas and solutions to lead our industry. Turning passion into action, uniting to do our best work, together.</p>
+            <textarea class="evidence" placeholder="Evidence or examples..."></textarea>
+          </div>
+          <div class="slider-wrap">
+            <input type="range" min="0" max="5" value="0" step="1"/>
+            <strong><span class="score">0</span>/5</strong>
+          </div>
+        </div>
+        <div class="behaviour">
+          <div>
+            <h4>Always growing</h4>
+            <p>We are brave, pushing ourselves to be better than yesterday. Learning quickly from our mistakes. Seeking growth, embracing feedback and inspiring others to believe. Challenging constructively and assuming positive intent. Sharing what we’ve learned.</p>
+            <textarea class="evidence" placeholder="Evidence or examples..."></textarea>
+          </div>
+          <div class="slider-wrap">
+            <input type="range" min="0" max="5" value="0" step="1"/>
+            <strong><span class="score">0</span>/5</strong>
+          </div>
+        </div>
+        <div class="behaviour">
+          <div>
+            <h4>Be curious</h4>
+            <p>Constantly seeking to understand our industry and break new boundaries. Asking questions and listening to the answers. Embracing new experiences with an open mind.</p>
+            <textarea class="evidence" placeholder="Evidence or examples..."></textarea>
+          </div>
+          <div class="slider-wrap">
+            <input type="range" min="0" max="5" value="0" step="1"/>
+            <strong><span class="score">0</span>/5</strong>
+          </div>
+        </div>
+      </section>
+    </form>
+
+    <!-- Reflective questions -->
+    <section class="card" id="reflect">
+      <div class="value-header">
+        <div class="value-chip">Reflective questions</div>
+        <div class="subtle">Optional but recommended</div>
+      </div>
+      <div class="behaviour"><div>
+        <h4>What could be done to help you feel more UNITED at scarlettabbott?</h4>
+        <textarea class="evidence reflect" data-q="UNITED"></textarea>
+      </div></div>
+      <div class="behaviour"><div>
+        <h4>What could be done to help you be more BRILLIANT at scarlettabbott?</h4>
+        <textarea class="evidence reflect" data-q="BRILLIANT"></textarea>
+      </div></div>
+      <div class="behaviour"><div>
+        <h4>What could be done to help you become UNSTOPPABLE at scarlettabbott?</h4>
+        <textarea class="evidence reflect" data-q="UNSTOPPABLE"></textarea>
+      </div></div>
+      <div class="behaviour"><div>
+        <h4>Any other reflections to share?</h4>
+        <textarea class="evidence reflect" data-q="OTHER"></textarea>
+      </div></div>
+    </section>
+
+    <!-- Summary -->
+    <section class="card">
+      <div class="value-header">
+        <div class="value-chip">Your summary</div>
+        <div class="subtle">Live scores update as you slide</div>
+      </div>
+      <div class="summary">
+        <div><canvas id="radar" width="500" height="380" aria-label="Values radar chart" role="img"></canvas></div>
+        <div><div class="card" id="scoreCards"></div></div>
+      </div>
+      <footer class="actions">
+        <button type="button" id="copyBtn">Copy summary</button>
+        <button type="button" id="saveBtn">Save locally</button>
+        <button type="button" class="primary" id="pdfBtn">Export PDF</button>
+      </footer>
+    </section>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+</html>

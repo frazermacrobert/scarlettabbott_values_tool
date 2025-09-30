@@ -38,11 +38,11 @@ input[type=range]:focus{outline:none;}
 input[type=range]::-webkit-slider-runnable-track{ height:8px; background:#ece7e0; border-radius:999px; border:1px solid rgba(20,20,20,0.08);}
 input[type=range]::-moz-range-track{ height:8px; background:#ece7e0; border:1px solid rgba(20,20,20,0.08); border-radius:999px;}
 /* Unicorn thumb */
-/* WebKit (Chrome, Edge, Safari) */
+/* WebKit */
 input[type=range]::-webkit-slider-thumb{
   -webkit-appearance:none;
   width:36px; height:36px;
-  background: url('./unicorn_head_traced.svg') center/contain no-repeat;
+  background: url('../unicorn_head_traced.svg') center/contain no-repeat;
   border:none; border-radius:0;
   margin-top:-14px; cursor:grab;
 }
@@ -51,9 +51,8 @@ input[type=range]::-webkit-slider-thumb:active{ cursor:grabbing; }
 /* Firefox */
 input[type=range]::-moz-range-thumb{
   width:36px; height:36px;
-  background: url('./unicorn_head_traced.svg') center/contain no-repeat;
+  background: url('../unicorn_head_traced.svg') center/contain no-repeat;
   border:none; border-radius:0; cursor:grab;
-}
 
 .badges{display:flex; gap:6px; font-size:12px; color:var(--muted);}
 textarea.evidence{width:100%; min-height:72px; resize:vertical; padding:10px 12px; border-radius:14px; border:1px solid rgba(20,20,20,0.12); outline:none;}
